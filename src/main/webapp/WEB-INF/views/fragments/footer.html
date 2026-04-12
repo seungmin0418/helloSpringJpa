@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="studentInfo"
+     style="border-top: 1px solid #ccc; margin-top: 20px; padding-top: 10px; text-align: center;">
+    <p th:text="${'실습 수행 일시: ' +
+    #temporals.format(#temporals.createNow(), 'yyyy년 MM월 dd일 (E) a hh:mm:ss')
+    + ' | 학번: 2171203 | 성명: 이승민'}"></p>
+</div>
+
+</body>
+</html>
